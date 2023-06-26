@@ -1,4 +1,16 @@
-.critical-care .title::before{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+#menu-bar{
+    display: none;
+}
+#menu-bar.show{
+    display: block;
+}
+
+.title::before{
     position: absolute;
     content: '';
     top: 0px;
@@ -7,3 +19,100 @@
     height: 100%;
     background: #F15A24;
 }
+.contant-box{
+    border-color: #F15A24 !important;
+}
+
+.news-box .button a img{
+    width: 30px;
+    transition: all .5s ease-in-out;
+}
+.news-box .button a:hover img{
+    width: 60px;
+    transition: all .5s ease-in-out;
+}
+.inner-box{
+    box-shadow: -1.53081e-15px 25px 25px rgba(0, 56, 115, 0.14902);
+    
+}
+.box-img{
+    width: -webkit-fill-available;
+}
+.latest-news .inner-box::before {
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 2px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #F15A24;
+}
+  .view-more-btn a {
+    position: relative;
+    overflow: hidden;
+    transition: .8s all;
+    width: 240px;
+    height: 80px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .view-more-btn a:hover{
+    color: #fff !important;
+    transition: .8s all;
+  }
+  .view-more-btn a:before, .view-more-btn a::after{
+    position: absolute;
+    content: '';
+    background: #1E3D59;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+  .view-more-btn a:before{
+    left: -10px;
+  }
+  .view-more-btn a:after{
+    right: -10px;
+  }
+  .view-more-btn a:hover:before{
+    animation:animationLeft10 .5s both;
+  }
+  .view-more-btn a:hover:after{
+    animation:animationRight10 .5s both;
+  }
+  @keyframes animationRight10{
+    0%{
+      right: -20px;
+    }
+    50% {
+      right: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      right: 50%;
+      width: 375px;
+      height: 375px;
+    }
+  }
+  @keyframes animationLeft10{
+    0%{
+      left: -20px;
+    }
+    50% {
+      left: 50%;
+      width: 20px;
+      height: 20px;
+    }
+    100% {
+      right: 50%;
+      width: 375px;
+      height: 375px;
+    }
+  }
+  
