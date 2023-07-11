@@ -218,9 +218,15 @@ input{
   left: -10px !important;
   z-index: 1;
 }
+.nav-box ul li a.active ,.nav-box ul li.active button{
+  color: #f15a24 !important;
+}
 .nav-box ul li a:hover{
-  color: #003873 !important;
-  
+  color: #f15a24 !important;
+  transition: all .5s ease-in-out;
+}
+.nav-box ul li a{
+  transition: all .5s ease-in-out;
 }
 @media screen and (max-width: 1024px) {
   .navbar-box {
