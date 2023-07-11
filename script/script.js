@@ -1,5 +1,4 @@
 $(document).on('ready', function () {
-       
 
     $("#menu-button").on("click", function () {
         $("#menu-bar").toggleClass("show");
@@ -32,12 +31,22 @@ $(document).on('ready', function () {
             speed: 300,
             slidesToShow: 1,
             adaptiveHeight: true
-    });
+    }); 
 
-    
-
-    
-
-
-    
+});
+$(document).on('ready', function () {
+    // tabbing
+    $('#parentVerticalTab').easyResponsiveTabs({
+        type: 'vertical', //Types: default, vertical, accordion
+        width: 'auto', //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: 'hor_1', // The tab groups identifier
+        activate: function(event) { // Callback function if tab is switched
+            var $tab = $(this);
+            var $info = $('#nested-tabInfo');
+            var $name = $('span', $info);
+            $name.text($tab.text());
+            $info.show();
+        }
+    });  
 });
