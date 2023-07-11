@@ -33,12 +33,12 @@ h2.resp-accordion {
     display: none;
 }
 
-.resp-tab-active {
+.active-resp {
 	border: 2px solid #f15a24 !important;
     border-radius: 10px;
 }
 
-.resp-tab-active {
+.active-resp {
     border-bottom: none;
     background-color: #fff;
 }
@@ -61,7 +61,7 @@ h2.resp-accordion {
     padding: 10px 15px;
 }
 
-h2.resp-tab-active {
+h2.active-resp {
     border: 2px solid #f15a24 !important;
     border-radius: 10px;
 }
@@ -99,7 +99,7 @@ h2.resp-tab-title:last-child {
     padding-bottom: 20px;
 }
 
-.resp-vtabs li.resp-tab-active { 
+.resp-vtabs li.active-resp { 
 position: relative;
 z-index: 1;
 
@@ -115,7 +115,7 @@ z-index: 1;
     border-top: 12px solid #1c3d5b;
 }
 
-h2.resp-tab-active span.resp-arrow {
+h2.active-resp span.resp-arrow {
     border: none;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
@@ -123,7 +123,7 @@ h2.resp-tab-active span.resp-arrow {
 }
 
 /*-----------Accordion styles-----------*/
-h2.resp-tab-active {
+h2.active-resp {
     background: #DBDBDB;/* !important;*/
 }
 

@@ -22,12 +22,7 @@ $(document).on('ready', function () {
             $name.text($tab.text());
             $info.show();
         }
-    });  
-
-    var hash = '#tab2',
-    lis = $("ul.resp-tabs-list > li");
-    lis.removeClass("resp-tab-active");
-    $("a[href='" + hash + "']").addClass("resp-tab-active"); 
+    }); 
 
     
     $(window).scroll(function () {

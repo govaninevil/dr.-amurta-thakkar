@@ -118,10 +118,10 @@
                 }
 
                 //Active correct tab
-                $($respTabs.find('.resp-tab-item.' + options.tabidentify)[tabNum]).addClass('resp-tab-active').css({
-                    'background-color': options.activetab_bg,
-                    'border-color': options.active_border_color
-                });
+                // $($respTabs.find('.resp-tab-item.' + options.tabidentify)[tabNum]).addClass('resp-tab-active').css({
+                //     'background-color': options.activetab_bg,
+                //     'border-color': options.active_border_color
+                // });
 
                 //keep closed if option = 'closed' or option is 'accordion' and the element is in accordion mode
                 if (options.closed !== true && !(options.closed === 'accordion' && !$respTabsList.is(':visible')) && !(options.closed === 'tabs' && $respTabsList.is(':visible'))) {
