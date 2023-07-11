@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Amuruta Thakkar</title>
     <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="style/easy-responsive-tabs.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -79,71 +86,129 @@
         </div>
     </header>
 
-
-    <!-- banner -->
-    <section class="bannner lg:pt-0 pt-[90px]">
-        <img src="image/banner.png" alt="" class="mt-[-1px]">
-    </section>
-
-    <!-- contac us -->
-    <section class="contact-us lg:mt-[-40px] sm:mt-0 mt-[60px] relative">
-        <div class="container 2xl:w-[70%] w-[100%] max-w-[100%] mx-auto bg-[#1E3D59] xl:px-[67px] lg:px-[37px] py-[36px] text-white text-center">
-            <div class="inner-box flex ">
-                <div class="box w-[33%] py-[20px]">
-                    <p class="lg:text-[25px] sm:text-[18px] text-[15px] font-[600]">For Emergency</p>
-                    <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900]"><a href="tell:+91 97277 07241">+91 97277 07241</a></h1>
+    <!-- BLOG-SLIDER -->
+    <section class="blog-slider lg:mt-[40px] sm:mt-[170px] mt-[120px] relative">
+        <div class="container mx-auto">
+            <div class="certificate-slider" id="certificate-slider">
+                <div class="slide-1 relative">
+                    <img src="image/blod-detail.png" alt="" class="mx-auto">
+                    <div class="slide-box lg:px-[49px] px-[29px] lg:py-[44px] py-[24px] bg-white lg:w-[35%] sm:w-[50%]  sm:absolute static top-[0px] left-[80px]">
+                        <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900] relative text-[#1E3D59] md:w-[50%] w-[100%]">Know Your Doctor</h1>
+                        <div class="border-b-[2px] border-[#F15A24] md:my-[20px] my-[10px]"></div>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Posted on May 22, 2023</p>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                        <div class="profile flex items-center ">
+                            <div class="profile-img bg-[#F15A24] rounded-[50px] relative md:w-[50px] w-[40px] md:h-[50px] h-[40px]">
+                                <i class="fa-solid fa-user absolute top-[50%] left-[50%] text-white -translate-y-2/4 -translate-x-2/4 md:text-[20px] text-[16px]"></i>
+                            </div>
+                            <span class="ml-[20px] md:text-[17px] text-[14px]">Dr. Amruta Thakker</span>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="box border-box border-x-2 border-white w-[33%] py-[20px]">
-                    <p class="lg:text-[25px] sm:text-[18px] text-[15px] font-[600]">Exprince</p>
-                    <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900]">10+</h1>
+                <div class="slide-1 relative">
+                    <img src="image/blod-detail.png" alt="" class="mx-auto">
+                    <div class="slide-box lg:px-[49px] px-[29px] lg:py-[44px] py-[24px] bg-white lg:w-[35%] sm:w-[50%]  sm:absolute static top-[0px] left-[80px]">
+                        <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900] relative text-[#1E3D59] md:w-[50%] w-[100%]">Know Your Doctor</h1>
+                        <div class="border-b-[2px] border-[#F15A24] md:my-[20px] my-[10px]"></div>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Posted on May 22, 2023</p>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                        <div class="profile flex items-center ">
+                            <div class="profile-img bg-[#F15A24] rounded-[50px] relative md:w-[50px] w-[40px] md:h-[50px] h-[40px]">
+                                <i class="fa-solid fa-user absolute top-[50%] left-[50%] text-white -translate-y-2/4 -translate-x-2/4 md:text-[20px] text-[16px]"></i>
+                            </div>
+                            <span class="ml-[20px] md:text-[17px] text-[14px]">Dr. Amruta Thakker</span>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="box w-[33%] py-[20px]">
-                    <p class="lg:text-[25px] sm:text-[18px] text-[15px] font-[600]">Patient Treated</p>
-                    <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900]">20000+</h1>
+                <div class="slide-1 relative">
+                    <img src="image/blod-detail.png" alt="" class="mx-auto">
+                    <div class="slide-box lg:px-[49px] px-[29px] lg:py-[44px] py-[24px] bg-white lg:w-[35%] sm:w-[50%]  sm:absolute static top-[0px] left-[80px]">
+                        <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900] relative text-[#1E3D59] md:w-[50%] w-[100%]">Know Your Doctor</h1>
+                        <div class="border-b-[2px] border-[#F15A24] md:my-[20px] my-[10px]"></div>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Posted on May 22, 2023</p>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                        <div class="profile flex items-center ">
+                            <div class="profile-img bg-[#F15A24] rounded-[50px] relative md:w-[50px] w-[40px] md:h-[50px] h-[40px]">
+                                <i class="fa-solid fa-user absolute top-[50%] left-[50%] text-white -translate-y-2/4 -translate-x-2/4 md:text-[20px] text-[16px]"></i>
+                            </div>
+                            <span class="ml-[20px] md:text-[17px] text-[14px]">Dr. Amruta Thakker</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slide-1 relative">
+                    <img src="image/blod-detail.png" alt="" class="mx-auto">
+                    <div class="slide-box lg:px-[49px] px-[29px] lg:py-[44px] py-[24px] bg-white lg:w-[35%] sm:w-[50%]  sm:absolute static top-[0px] left-[80px]">
+                        <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900] relative text-[#1E3D59] md:w-[50%] w-[100%]">Know Your Doctor</h1>
+                        <div class="border-b-[2px] border-[#F15A24] md:my-[20px] my-[10px]"></div>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Posted on May 22, 2023</p>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                        <div class="profile flex items-center ">
+                            <div class="profile-img bg-[#F15A24] rounded-[50px] relative md:w-[50px] w-[40px] md:h-[50px] h-[40px]">
+                                <i class="fa-solid fa-user absolute top-[50%] left-[50%] text-white -translate-y-2/4 -translate-x-2/4 md:text-[20px] text-[16px]"></i>
+                            </div>
+                            <span class="ml-[20px] md:text-[17px] text-[14px]">Dr. Amruta Thakker</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slide-1 relative">
+                    <img src="image/blod-detail.png" alt="" class="mx-auto">
+                    <div class="slide-box lg:px-[49px] px-[29px] lg:py-[44px] py-[24px] bg-white lg:w-[35%] sm:w-[50%]  sm:absolute static top-[0px] left-[80px]">
+                        <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900] relative text-[#1E3D59] md:w-[50%] w-[100%]">Know Your Doctor</h1>
+                        <div class="border-b-[2px] border-[#F15A24] md:my-[20px] my-[10px]"></div>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Posted on May 22, 2023</p>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                        <div class="profile flex items-center ">
+                            <div class="profile-img bg-[#F15A24] rounded-[50px] relative md:w-[50px] w-[40px] md:h-[50px] h-[40px]">
+                                <i class="fa-solid fa-user absolute top-[50%] left-[50%] text-white -translate-y-2/4 -translate-x-2/4 md:text-[20px] text-[16px]"></i>
+                            </div>
+                            <span class="ml-[20px] md:text-[17px] text-[14px]">Dr. Amruta Thakker</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slide-1 relative">
+                    <img src="image/blod-detail.png" alt="" class="mx-auto">
+                    <div class="slide-box lg:px-[49px] px-[29px] lg:py-[44px] py-[24px] bg-white lg:w-[35%] sm:w-[50%]  sm:absolute static top-[0px] left-[80px]">
+                        <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900] relative text-[#1E3D59] md:w-[50%] w-[100%]">Know Your Doctor</h1>
+                        <div class="border-b-[2px] border-[#F15A24] md:my-[20px] my-[10px]"></div>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Posted on May 22, 2023</p>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                        <div class="profile flex items-center ">
+                            <div class="profile-img bg-[#F15A24] rounded-[50px] relative md:w-[50px] w-[40px] md:h-[50px] h-[40px]">
+                                <i class="fa-solid fa-user absolute top-[50%] left-[50%] text-white -translate-y-2/4 -translate-x-2/4 md:text-[20px] text-[16px]"></i>
+                            </div>
+                            <span class="ml-[20px] md:text-[17px] text-[14px]">Dr. Amruta Thakker</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slide-1 relative">
+                    <img src="image/blod-detail.png" alt="" class="mx-auto">
+                    <div class="slide-box lg:px-[49px] px-[29px] lg:py-[44px] py-[24px] bg-white lg:w-[35%] sm:w-[50%]  sm:absolute static top-[0px] left-[80px]">
+                        <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900] relative text-[#1E3D59] md:w-[50%] w-[100%]">Know Your Doctor</h1>
+                        <div class="border-b-[2px] border-[#F15A24] md:my-[20px] my-[10px]"></div>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Posted on May 22, 2023</p>
+                        <p class="date text-[#878181] md:mb-[20px] mb-[10px] md:text-[16px] text-[14px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                        <div class="profile flex items-center ">
+                            <div class="profile-img bg-[#F15A24] rounded-[50px] relative md:w-[50px] w-[40px] md:h-[50px] h-[40px]">
+                                <i class="fa-solid fa-user absolute top-[50%] left-[50%] text-white -translate-y-2/4 -translate-x-2/4 md:text-[20px] text-[16px]"></i>
+                            </div>
+                            <span class="ml-[20px] md:text-[17px] text-[14px]">Dr. Amruta Thakker</span>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- critical care -->
-    <section class="critical-care lg:mt-[150px] mt-[70px]">
-        <div class="container sm:w-[80%] w-[100%] mx-auto ">
-            <div class="title relative py-5 sm:mb-14 mb-7">
-                <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900] ml-20 text-[#1E3D59]">Dr. Amruta Thakkar<span
-                        class="text-[#F15A24] ml-[15px]"> Pediatrician & Pediatric Critical Care Specialist</span></h1>
-            </div>
-            <div class="content-box">
-                <div class="grid lg:grid-cols-3 grid-cols-1 justify-items-center lg:gap-[54px] gap-10">
-                    <div class="box">
-                        <div class="contant-box border rounded-[10px] sm:p-[20px] p-[15px]  2xl:mb-32 xl:mb-24  lg:mb-20 mb-10">
-                            <p class="sm:text-[18px] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium.</p>
-                        </div>
-                        <div class="contant-box border rounded-[10px] sm:p-[20px] p-[15px] ">
-                            <p class="sm:text-[18px] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium.</p>
-                        </div>
-                    </div>
-                    <div class="box relative">
-                        <img src="image/critical care.png" alt="">
-                    </div>
-                    <div class="box">
-                        <div class="contant-box border rounded-[10px] sm:p-[20px] p-[15px]  2xl:mb-32 xl:mb-24  lg:mb-20 mb-10">
-                            <p class="sm:text-[18px] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium.</p>
-                        </div>
-                        <div class="contant-box border rounded-[10px] sm:p-[20px] p-[15px] ">
-                            <p class="sm:text-[18px] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- latest news -->
+    <!-- more-blog -->
     <section class="latest-news lg:mt-[150px] mt-[70px]">
         <div class="container mx-auto">
-            <div class="title relative py-5 sm:mb-14 mb-7 mx-auto sm:w-max w-auto">
-                <h1 class="lg:text-[33px] sm:text-[25px] text-[20px] font-[900] ml-20 text-[#1E3D59]">Check Out Our Latest News</h1>
-            </div>
             <div class="news-box grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:gap-[30px] gap-[50px]">
                 <div class="inner-box rounded-tl-[140px] relative">
                     <div class="img-box ">
@@ -160,7 +225,7 @@
                                 nonumy eirmod tempor invidunt ut labore et.</p>
                         </div>
                         <div class="button">
-                            <a href="#" class="flex items-center text-[#1E3D59] font-[700] sm:text-[18px] text-[12px]">READ MORE <img
+                            <a href="blog-details.html" class="flex items-center text-[#1E3D59] font-[700] sm:text-[18px] text-[12px]">READ MORE <img
                                     src="image/hover-arrow.png" alt="" class="hover-img ml-4"></a>
                         </div>
                     </div>
@@ -180,7 +245,7 @@
                                 nonumy eirmod tempor invidunt ut labore et.</p>
                         </div>
                         <div class="button">
-                            <a href="#" class="flex items-center text-[#1E3D59] font-[700] sm:text-[18px] text-[12px]">READ MORE <img
+                            <a href="blog-details.html" class="flex items-center text-[#1E3D59] font-[700] sm:text-[18px] text-[12px]">READ MORE <img
                                     src="image/hover-arrow.png" alt="" class="hover-img ml-4"></a>
                         </div>
                     </div>
@@ -200,7 +265,7 @@
                                 nonumy eirmod tempor invidunt ut labore et.</p>
                         </div>
                         <div class="button">
-                            <a href="#" class="flex items-center text-[#1E3D59] font-[700] sm:text-[18px] text-[12px]">READ MORE <img
+                            <a href="blog-details.html" class="flex items-center text-[#1E3D59] font-[700] sm:text-[18px] text-[12px]">READ MORE <img
                                     src="image/hover-arrow.png" alt="" class="hover-img ml-4"></a>
                         </div>
                     </div>
@@ -220,7 +285,7 @@
                                 nonumy eirmod tempor invidunt ut labore et.</p>
                         </div>
                         <div class="button">
-                            <a href="#" class="flex items-center text-[] font-[700] sm:text-[18px] text-[12px]">READ MORE <img
+                            <a href="blog-details.html" class="flex items-center text-[] font-[700] sm:text-[18px] text-[12px]">READ MORE <img
                                     src="image/hover-arrow.png" alt="" class="hover-img ml-4"></a>
                         </div>
                     </div>
@@ -234,155 +299,17 @@
         </div>
     </section>
 
-    <!-- f&q -->
-    <section class="fandq lg:mt-64 mt-[70px]">
-        <div class="container mx-auto">
-            <div class="grid lg:grid-cols-2 grid-cols-1 sm:gap-[50px] items-start">
-                <div class="title relative py-5 sm:mb-14 mb-7">
-                    <h1 class="2xl:text-[60px] lg:text-[50px] text-[25px] font-[900] ml-20 lg:w-[50%]  text-[#1E3D59]">Frequently Asked Questions</h1>
-                </div>
-                <div class="collage body">
-                    <div class="custom-collapse">
-                        <h3 class="relative text-[#003873] font-[700] 2xl:text-[20px] sm:text-[18px] text-[15px] "><span class="w-[80%] inline-block">What is the
-                            difference between the Automatic Organic Waste Converter and other similar units
-                            on the market?</span><span class="position"><span class="plus"></span></span></h3>
-                        <div>
-                            <p class="sm:mt-[23px] mt-[13px] text-[12px]">The Automatic Organic Waste Converter does not require ANY additional
-                                products such as
-                                wood chips, chemicals, or charcoal to be added to the waste. </p>
-                        </div>
-                    </div>
-                    <div class="custom-collapse">
-                        <h3 class="relative text-[#003873] font-[700] 2xl:text-[20px] sm:text-[18px] text-[15px] "><span class="w-[80%] inline-block">What is the
-                            difference between the Automatic Organic Waste Converter and other similar units
-                            on the market?</span><span class="position"><span class="plus"></span></span></h3>
-                        <div>
-                            <p class="sm:mt-[23px] mt-[13px] text-[12px]">The Automatic Organic Waste Converter does not require ANY additional
-                                products such as
-                                wood chips, chemicals, or charcoal to be added to the waste. </p>
-                        </div>
-                    </div>
-                    <div class="custom-collapse">
-                        <h3 class="relative text-[#003873] font-[700] 2xl:text-[20px] sm:text-[18px] text-[15px] "><span class="w-[80%] inline-block">What is the
-                            difference between the Automatic Organic Waste Converter and other similar units
-                            on the market?</span><span class="position"><span class="plus"></span></span></h3>
-                        <div>
-                            <p class="sm:mt-[23px] mt-[13px] text-[12px]">The Automatic Organic Waste Converter does not require ANY additional
-                                products such as
-                                wood chips, chemicals, or charcoal to be added to the waste. </p>
-                        </div>
-                    </div>
-                    <div class="custom-collapse">
-                        <h3 class="relative text-[#003873] font-[700] 2xl:text-[20px] sm:text-[18px] text-[15px] "><span class="w-[80%] inline-block">What is the
-                            difference between the Automatic Organic Waste Converter and other similar units
-                            on the market?</span><span class="position"><span class="plus"></span></span></h3>
-                        <div>
-                            <p class="sm:mt-[23px] mt-[13px] text-[12px]">The Automatic Organic Waste Converter does not require ANY additional
-                                products such as
-                                wood chips, chemicals, or charcoal to be added to the waste. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- love what we do -->
-    <section class="customers lg:mt-64 sm:mt-[70px] mt-[45px]">
-        <div class="container mx-auto">
-            <div class="lg:grid flex flex-col-reverse lg:grid-cols-2  gap-[60px]">
-                <div class="card-box ">
-                    <div class="card relative text-white mb-[20px]">
-                        <div class="card-inner-box px-12 py-6 bg-[#003873] rounded-[20px]">
-                            <div class="quote absolute left-[25px] top-[25px]">
-                                <img src="image/Quote.png" alt="">
-                            </div>
-                            <div class="content">
-                                <p class="sm:text-[20px] text-[14px] mb-[30px]">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                    elitr, sed diam nonumy eirmod
-                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                                    eos et accusam
-                                </p>
-                                <div class="name-box">
-                                    <div class="img flex items-center gap-[20px] ">
-                                        <img src="image/customer-img.png" alt="" class="sm:w-auto w-[40px]">
-                                        <p class="sm:text-[15px] text-[12px]">Karan Godhani</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card relative text-white">
-                        <div class="card-inner-box px-12 py-6 bg-[#F15A24] rounded-[20px]">
-                            <div class="quote absolute left-[25px] top-[25px]">
-                                <img src="image/Quote.png" alt="">
-                            </div>
-                            <div class="content">
-                                <p class="sm:text-[20px] text-[14px] mb-[30px]">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                    elitr, sed diam nonumy eirmod
-                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                                    eos et accusam
-                                </p>
-                                <div class="name-box">
-                                    <div class="img flex items-center gap-[20px]">
-                                        <img src="image/customer-img.png" alt="" class="sm:w-auto w-[40px]">
-                                        <p class="sm:text-[15px] text-[12px]">Karan Godhani</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-box ">
-                    <div class="title relative py-5 sm:mb-14 mb-7">
-                        <h1 class="2xl:text-[60px] lg:text-[50px] text-[25px] font-[900] ml-20 text-[#1E3D59]">Our customers
-                            love what we do</h1>
-                    </div>
-                    <p class="sm:text-[22px] text-[15px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                        eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                        sit amet. Lorem ipsum dolor sit amet,</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- gallery -->
-    <section class="gallery bg-[#FFF6F3] py-[80px] lg:mt-64 mt-[70px] relative overflow-hidden">
-        <div class="container mx-auto">
-            <div class="absolute backround-line right-0 bottom-[-20px] z-[0]">
-                <img src="image/line.png" alt="">
-            </div>
-            <div class="title relative py-5 sm:mb-14 mb-7">
-                <h1 class="2xl:text-[60px] lg:text-[50px] text-[25px] font-[900] ml-20 text-[#1E3D59]">Our Gallery</h1>
-            </div>
-            <div class="gallery-box grid xl:grid-cols-5 lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 sm:gap-[100px] gap-[30px] relative z-[1]">
-                <img src="image/gallery-img.png" alt="">
-                <img src="image/gallery-img.png" alt="">
-                <img src="image/gallery-img.png" alt="">
-                <img src="image/gallery-img.png" alt="">
-                <img src="image/gallery-img.png" alt="">
-                <img src="image/gallery-img.png" alt="">
-                <img src="image/gallery-img.png" alt="">
-                <img src="image/gallery-img.png" alt="">
-                <img src="image/gallery-img.png" alt="">
-                <img src="image/gallery-img.png" alt="">
-
-            </div>
-        </div>
-    </section>
-
-
     <!-- footer -->
     <footer class="bg-[#1e3d59] text-white rounded-tl-[100px] lg:mt-64 mt-[70px] relative">
         <div class="container mx-auto">
-            <div class="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-[100px] gap-[40px] py-20 footer-box sm:text-left text-center">
+            <div
+                class="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-[100px] gap-[40px] py-20 footer-box sm:text-left text-center">
                 <div class="logo-box">
                     <div class="logo">
                         <a href="#"><img src="image/sub-logo.png" alt=""></a>
                     </div>
-                    <p class="my-8 sm:text-[15px] text-[14px] text-left">Trafalgar provides progressive, and affordable healthcare, accessible on
+                    <p class="my-8 sm:text-[15px] text-[14px] text-left">Trafalgar provides progressive, and affordable
+                        healthcare, accessible on
                         mobile and online for everyone</p>
                     <div class="call-box mb-6">
                         <a href="tel:+919727707241" class="flex items-center"><img src="image/call-icon.png" alt=""
@@ -393,14 +320,16 @@
                                 src="image/mail-icon.png" alt="" class="mr-6">dr.amrutathakkar@gmail.com</a>
                     </div>
                     <div class="add-box mb-6">
-                        <p class="flex items-start"><img src="image/add-icon.png" alt="" class="mr-6"><span class="text-left">North side
+                        <p class="flex items-start"><img src="image/add-icon.png" alt="" class="mr-6"><span
+                                class="text-left">North side
                                 road 675, Western city capital</span></p>
                     </div>
                 </div>
                 <div class="service">
                     <h4 class="text-[16px]  text-white mb-[35px]">Services</h4>
                     <ul>
-                        <li class=" mb-[15px]"><a href="dr-amruta-thakkar.html" class="text-[#80beff]">Dr. Amruta Thakkar</a></li>
+                        <li class=" mb-[15px]"><a href="dr-amruta-thakkar.html" class="text-[#80beff]">Dr. Amruta
+                                Thakkar</a></li>
                         <li class=" mb-[15px]"><a href="blog.html" class="text-[#80beff]">Blogs</a></li>
                         <li class=" mb-[15px]"><a href="#" class="text-[#80beff]">Testimonials</a></li>
                         <li class=" mb-[15px]"><a href="gallery.html" class="text-[#80beff]">Our Gallery</a></li>
@@ -437,7 +366,7 @@
                     </div>
                 </div>
             </div>
-           
+
         </div>
         <div class="lastline text-center px-8 py-4 bg-[#ffffff14] sm:text-18px text-[12px]">
             <p>Copyright©2022 Dr. Amruta Thakkar Powered By Rchitrix Digital Solutions</p>
@@ -445,10 +374,13 @@
     </footer>
 
 
-    
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="https://kit.fontawesome.com/884533464b.js" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/884533464b.js" crossorigin="anonymous"></script>
+    <!-- <script src="script/easyResponsiveTabs.js"></script> -->
     <script src="script/script.js"></script>
 
 </body>
