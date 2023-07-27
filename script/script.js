@@ -10,6 +10,15 @@ $(document).on('ready', function () {
         $("body").toggleClass("mobile");
     });
 
+    $('.collage.body h3').each(function() {
+        var tis = $(this), state = false, answer = tis.next('div').slideUp();
+        tis.click(function() {
+            state = !state;
+            answer.slideToggle(state);
+            tis.toggleClass('active',state);
+        });
+    });
+
     $('#parentVerticalTab').easyResponsiveTabs({
         type: 'vertical', //Types: default, vertical, accordion
         width: 'auto', //auto or any width like 600px
@@ -33,14 +42,7 @@ $(document).on('ready', function () {
         }
     });
 
-    $('.collage.body h3').each(function() {
-        var tis = $(this), state = false, answer = tis.next('div').slideUp();
-        tis.click(function() {
-            state = !state;
-            answer.slideToggle(state);
-            tis.toggleClass('active',state);
-        });
-    });
+    
     
     $('#certificate-slider').slick({
             dots: false,
