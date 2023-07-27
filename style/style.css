@@ -22,7 +22,9 @@
 .contant-box {
   border-color: #f15a24 !important;
 }
-
+.pop{
+  display: none;
+}
 .news-box .button a img {
   width: 30px;
   transition: all 0.5s ease-in-out;
@@ -449,4 +451,31 @@ input{
   .amruta{
     margin-top: 70px !important;
   }
+}
+
+.pop-a{
+  display: none;
+  overflow-y: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50% ,-50%);
+}
+
+.pop-a.open{
+  display: block;
+}
+body.pop-a{
+  height: 100vh;
+  overflow-y: hidden;
+}
+.btn-primary{
+  border: none !important;
+}
+.btn-primary:hover{
+  background-color: #f15a24 !important;
+}
+.modal-dialog{
+  top: 50% ;
+  transform: translateY(-50%) !important;
 }
